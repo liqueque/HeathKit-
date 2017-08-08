@@ -19,6 +19,5 @@ Running Life（开源）是基于HealthKit和高德地图开发的健康跑步�
 `. ` 实现一个view的复用机制解决内存暴涨的问题
 #现状
 项目处于不断完善和重构当中，目前实现了80%功能，后台是我另外一个小伙伴开发，同样是开源的。      
-接口文档：[https://github.com/yinzishao/run/blob/master/README.md](https://github.com/yinzishao/run/blob/master/README.md)    
-后台源码：[https://github.com/yinzishao/run](https://github.com/yinzishao/run)    
+   
 
