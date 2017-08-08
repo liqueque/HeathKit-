@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		006294286008069CEF36625D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 505884C08A55AF9DE2F8D824 /* libPods.a */; };
+		00A833DC1F384BEA00F78F8D /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A833DB1F384BEA00F78F8D /* HealthKit.framework */; };
 		4E04FA351D81875B00ED32A6 /* RunnungMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E04FA341D81875B00ED32A6 /* RunnungMapView.m */; };
 		4E04FA371D81877700ED32A6 /* RunnungMapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E04FA361D81877700ED32A6 /* RunnungMapView.xib */; };
 		4E04FA3A1D818E1900ED32A6 /* RunningMapViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E04FA391D818E1900ED32A6 /* RunningMapViewModel.m */; };
@@ -139,10 +140,10 @@
 		4E4DEB051D6EDAD400B8D699 /* XDRefresh_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E4DEA8C1D6EDAD400B8D699 /* XDRefresh_arrow@2x.png */; };
 		4E4DEB061D6EDAD400B8D699 /* XDRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4DEA8E1D6EDAD400B8D699 /* XDRefreshFooter.m */; };
 		4E4DEB071D6EDAD400B8D699 /* XDRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4DEA901D6EDAD400B8D699 /* XDRefreshHeader.m */; };
-		4E4DEB091D6EDCB200B8D699 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E4DEB081D6EDCB200B8D699 /* HealthKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00A833DB1F384BEA00F78F8D /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		4E04FA331D81875B00ED32A6 /* RunnungMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunnungMapView.h; sourceTree = "<group>"; };
 		4E04FA341D81875B00ED32A6 /* RunnungMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunnungMapView.m; sourceTree = "<group>"; };
 		4E04FA361D81877700ED32A6 /* RunnungMapView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RunnungMapView.xib; sourceTree = "<group>"; };
@@ -398,7 +399,6 @@
 		4E4DEA8E1D6EDAD400B8D699 /* XDRefreshFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDRefreshFooter.m; sourceTree = "<group>"; };
 		4E4DEA8F1D6EDAD400B8D699 /* XDRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDRefreshHeader.h; sourceTree = "<group>"; };
 		4E4DEA901D6EDAD400B8D699 /* XDRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDRefreshHeader.m; sourceTree = "<group>"; };
-		4E4DEB081D6EDCB200B8D699 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		505884C08A55AF9DE2F8D824 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8037B9DE5811678565F7A14D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		B6F2D9A48F54E0686A040FCC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -409,8 +409,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E4DEB091D6EDCB200B8D699 /* HealthKit.framework in Frameworks */,
 				006294286008069CEF36625D /* libPods.a in Frameworks */,
+				00A833DC1F384BEA00F78F8D /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1275,7 +1275,7 @@
 		8965C5374921F8CF92375DD9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4E4DEB081D6EDCB200B8D699 /* HealthKit.framework */,
+				00A833DB1F384BEA00F78F8D /* HealthKit.framework */,
 				505884C08A55AF9DE2F8D824 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -1658,7 +1658,7 @@
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Config/PrefixHeader.pch";
 				INFOPLIST_FILE = CoolRun/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xindong.runninglife;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1678,7 +1678,7 @@
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Config/PrefixHeader.pch";
 				INFOPLIST_FILE = CoolRun/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xindong.runninglife;
 				PRODUCT_NAME = "$(TARGET_NAME)";

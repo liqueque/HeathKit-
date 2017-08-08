@@ -32,6 +32,7 @@
     return self;
 }
 
+//从HeathKit获取每个月份的距离数据
 - (void)getDistancesWithYear:(NSInteger)year
                        month:(NSInteger)month
                     complete:(completeBlock) block
@@ -113,6 +114,7 @@
     [self.healthStore executeQuery:query];
 }
 
+//根据heathKit获取的距离数据计算出卡路里数据
 - (void)getKcalWithWeight:(float)weight
                      year:(NSInteger)year
                     month:(NSInteger)month
